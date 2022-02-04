@@ -6,10 +6,15 @@
 - 방명록 -> CRUD
 - API 이용한 지도 제작
 
+<br/><br/>
 
 2. 기술 스택<br>
 - HTML/CSS , Javascript<br>
 - Springboot<br>
 - Mysql<br>
 
-지속적으로 수정중
+<br/><br/>
+
+3. 추가 고려사항<br>
+- 
+
