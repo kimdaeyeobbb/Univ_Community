@@ -1,0 +1,20 @@
+$color--black: #0000;
+$color--white: #ffff;
+
+body {
+    background-color: orange;
+    h1 {
+        color: $color--black;
+        font-size: 40px;
+        display: flex;
+    }
+
+    span{
+        div{
+            h1{
+                color: red;
+            }
+        }
+    }
+}
+
