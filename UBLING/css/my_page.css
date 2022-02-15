@@ -1,0 +1,184 @@
+* {
+  margin: 0 auto;
+}
+
+header {
+  width: 1920px;
+  height: 48px;
+}
+
+.logo {
+  margin: 9px 0 9px 363px;
+  width: 76px;
+  height: 30px;
+  float: left;
+}
+
+nav {
+  margin: 9px 363px 9px 0;
+  width: 158px;
+  height: 30px;
+  float: right;
+  background-color: #FFFFFF;
+}
+
+.button__create-room {
+  float: left;
+  margin: 2px 10px 2px 0;
+  width: 54px;
+  height: 26px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 100px;
+  color: #7F71DB;
+  background-color: #f3f3fb;
+}
+
+.button__enter-room {
+  float: left;
+  margin: 2px 10px 2px 0;
+  width: 54px;
+  height: 26px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 100px;
+  color: #7F71DB;
+  background-color: #f3f3fb;
+}
+
+.button__my-account {
+  float: left;
+}
+
+.divider {
+  width: 1920px;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
+main {
+  padding: 28px 0 0 0;
+  width: 1920px;
+  height: 1004px;
+  background-color: rgb(249, 250, 251);
+}
+
+
+article {
+  margin: 0 0 0 363px;
+  width: 888px;
+  height: 580px;
+  float: left;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.room__list--title {
+  margin: 20px 0 23px 36px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.room__list--divider {
+  width: 888px;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
+.room__list--belong {
+  margin: 20px 0 0 36px;
+  width: 23px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #b4b4b4;
+  float: left;
+}
+
+.room__list--role {
+  margin: 20px 0 0 228px;
+  width: 23px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #b4b4b4;
+  float: left;
+}
+
+.room {
+  padding: 20px 20px 20px 36px;
+  width: 832px;
+  height: 438px;
+  list-style: none;
+  clear: left;
+}
+
+.room__row {
+  width: 832px;
+  height: 32px;
+  position: relative;
+}
+
+.room__title {
+  margin: 8px 0 0 0;
+  width: 152px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 500;
+  float: left;
+}
+
+.room__role {
+  margin: 8px 0 0 100px;
+  width: 23px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 500;
+  float: left;
+}
+
+.room__enter {
+  margin: 0 0 0 20px;
+  padding: 0;
+  width: 110px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4733cc;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  right: 150px;
+}
+
+.room__exit {
+  padding: 0;
+  width: 110px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  right: 20px;
+}
+
+aside {
+  margin: 0 0 0 30px;
+  width: 276px;
+  height: 580px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  float: left;
+}
+
+.profile__title {
+  margin: 20px 0 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
