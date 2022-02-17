@@ -6,6 +6,8 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     login: './src/js/login.js',
+    askCreateRoom: './src/js/askCreateRoom.js',
+    writeRoomInfo: './src/js/writeRoomInfo.js',
   },
 
   output: {
@@ -33,7 +35,6 @@ module.exports = {
       title: 'Index Title',
       hash: true,
       filename: 'index.html',
-      excludeChunks: ['login'],
       template: './index.html',
     }),
 
@@ -41,8 +42,21 @@ module.exports = {
       title: 'Login Title',
       hash: true,
       filename: 'login.html',
-      chunks: ['login'],
       template: './login.html',
+    }),
+
+    new HtmlPlugin({
+      title: 'askCreateRoom Title',
+      hash: true,
+      filename: 'askCreateRoom.html',
+      template: './askCreateRoom.html',
+    }),
+
+    new HtmlPlugin({
+      title: 'writeRoomInfo Title',
+      hash: true,
+      filename: 'writeRoomInfo.html',
+      template: './writeRoomInfo.html',
     }),
 
     new CopyPlugin({
