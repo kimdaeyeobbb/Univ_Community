@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBLING</title>
+  </head>
+
+  <body id="myPageBody">
+    <header id="myPageHeader">
+      <div id="headerWrap">
+        <div class="logo">UBLING</div>
+        <nav id="myPageNav">
+          <button class="button__create-room">방 생성</button>
+          <button class="button__enter-room">방 참가</button>
+          <div id="dropdown">
+            <div id="dropdownBtn"><img src="./images/로그인아이콘.svg" /></div>
+            <div id="dropdownContent">
+              <a href="#">마이페이지</a>
+              <a href="./login.html">로그인</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="myPageMain">
+      <article id="myPageArticle">
+        <div class="room__list--title">방 목록</div>
+        <div class="room__list--divider"></div>
+        <div class="room__list">
+          <div class="room__list--belong">소속</div>
+          <div class="room__list--role">역할</div>
+          <ul class="room"></ul>
+        </div>
+      </article>
+
+      <aside id="myPageAside">
+        <div class="profile__title">프로필</div>
+        <img src="images/로그인아이콘 (1).svg" class="icon__my-account" />
+        <button class="button__edit-picture">
+          <img src="images/편집아이콘.svg" />
+        </button>
+        <div class="profile-form">
+          <input type="text" class="form__edit-profile--name" />
+          <input type="email" class="form__edit-profile--email" />
+          <input type="text" class="form__edit-profile--nickname" />
+          <button class="form__edit-profile--submit">수정하기</button>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
