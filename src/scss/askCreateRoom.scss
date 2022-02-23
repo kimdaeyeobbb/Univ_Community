@@ -88,7 +88,7 @@ header {
   display: block;
 }
 
-/* index */
+/* askCreateRoom */
 
 body {
   background-color: $bgColor;
@@ -103,11 +103,11 @@ section {
 
   > div {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 400px;
+    padding-top: 102px;
   }
 }
 
@@ -125,7 +125,7 @@ section {
   color: #b4b4b4;
 }
 
-#startBtn {
+#createRoomBtn {
   width: 110px;
   height: 32px;
   color: $btnColor;

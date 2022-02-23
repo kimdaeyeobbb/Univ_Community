@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <!-- update the version number as needed -->
+    <script src="/__/firebase/9.6.7/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/9.6.7/firebase-auth-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-database-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-functions-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-messaging-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-storage-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-analytics-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-remote-config-compat.js"></script>
+    <script src="/__/firebase/9.6.7/firebase-performance-compat.js"></script>
+    <!-- 
+initialize the SDK after all desired features are loaded, set useEmulator to false
+to avoid connecting the SDK to running emulators.
+-->
+    <script src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <script>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'firebase/app';
+      import { getAnalytics } from 'firebase/analytics';
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyBrsie0oZdJ78OatVUbyXvZvD6MM8R528o',
+        authDomain: 'test-e2194.firebaseapp.com',
+        databaseURL:
+          'https://test-e2194-default-rtdb.asia-southeast1.firebasedatabase.app',
+        projectId: 'test-e2194',
+        storageBucket: 'test-e2194.appspot.com',
+        messagingSenderId: '1023390401205',
+        appId: '1:1023390401205:web:3d9bca60cd7b39f9e074fc',
+        measurementId: 'G-W4LYX11B5F',
+      };
+
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      // firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script>
+      const db = firebase.firestore();
+      db.collection('room')
+        .get()
+        .then((result) => {
+          result.forEach((doc) => {
+            console.log(doc.data());
+          });
+        });
+    </script>
+  </body>
+</html>

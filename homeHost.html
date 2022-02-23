@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBLING</title>
+  </head>
+
+  <body id="homeHostBody">
+    <header id="homeHostHeader">
+      <div id="headerWrap">
+        <div class="logo">UBLING</div>
+        <nav id="homeHostNav">
+          <button class="button__create-room">방 생성</button>
+          <button class="button__enter-room">방 참가</button>
+          <div id="dropdown">
+            <div id="dropdownBtn"><img src="./images/로그인아이콘.svg" /></div>
+            <div id="dropdownContent">
+              <a href="#">마이페이지</a>
+              <a href="./login.html">로그인</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="homeHostMain">
+      <article id="homeHostArticle">
+        <div class="room__title">하늘대 컴퓨터공학부 22학번방</div>
+
+        <button class="button__do-mission">미션하기</button>
+
+        <img src="images/미션아이콘.svg" class="icon__mission" />
+
+        <div class="room__mission--insert">
+          <img src="images/로그인아이콘.svg" class="icon__master" />
+          <input
+            type="text"
+            class="room__mission--input"
+            placeholder="입력"
+            autofocus
+          />
+          <button class="button__upload">올리기</button>
+        </div>
+
+        <ul class="room__mission--list"></ul>
+
+        <button class="button__back">뒤로가기</button>
+      </article>
+      <aside id="homeHostAside">
+        <div class="member">멤버</div>
+        <ul class="room__members"></ul>
+
+        <div class="room__code"></div>
+      </aside>
+    </main>
+  </body>
+</html>

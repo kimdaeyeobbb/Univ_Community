@@ -1,0 +1,44 @@
+<!-- 
+  비밀번호 input type을 password로 변경
+  inputTit 위치 변경
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBLING</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div id="logo">UBLING</div>
+        <div id="gnb">
+          <input type="button" value="방 생성" id="createRoom" />
+          <input type="button" value="방 참가" id="joinRoom" />
+          <div id="dropdown">
+            <div id="dropdownBtn"><img src="./images/loginIcon.svg" /></div>
+            <div id="dropdownContent">
+              <a href="#">마이페이지</a>
+              <a href="./login.html">로그인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <div id="tit">방 정보를 입력해주세요</div>
+        <label id="inputTit">방 이름</label>
+        <input type="text" placeholder="이름" id="name" />
+        <label id="inputTit">비밀번호</label>
+        <input type="password" placeholder="암호(6자리)" id="password" />
+        <div id="explain">암호가 있는 사용자만 방에 들어올 수 있습니다.</div>
+        <input type="button" value="다음" id="nextBtn" />
+      </div>
+    </div>
+  </body>
+</html>

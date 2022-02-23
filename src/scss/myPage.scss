@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#myPageBody {
+  background-color: rgb(249, 250, 251);
+
+  > #myPageHeader {
+    margin: 0 auto;
+    width: 100%;
+    height: 48px;
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+
+    > #headerWrap {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 1194px;
+      background-color: white;
+      border-bottom: 1px solid #e8e8e8;
+
+      > .logo {
+        width: 66px;
+        height: 26px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      > #myPageNav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: #ffffff;
+
+        > .button__create-room,
+        .button__enter-room {
+          padding: 0;
+          margin-right: 20px;
+          width: 54px;
+          height: 26px;
+          border-radius: 100px;
+          border: none;
+          color: #7f71d8;
+          background-color: #f3f3fb;
+          cursor: pointer;
+
+          &:hover {
+            color: #8a7ed8;
+            background-color: #ebebff;
+          }
+        }
+
+        > #dropdown {
+          position: relative;
+          display: inline-block;
+          font-size: 14px;
+          padding: 14px;
+          cursor: pointer;
+          z-index: 1;
+
+          > #dropdownBtn div {
+            justify-content: flex-end;
+          }
+
+          > #dropdownContent {
+            display: none;
+            position: absolute;
+            background-color: white;
+            margin-top: 14px;
+            min-width: 130px;
+            padding: 4px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+            > a {
+              color: black;
+              padding: 8px;
+              text-decoration: none;
+              display: block;
+            }
+
+            > a:hover {
+              background-color: #fafafa;
+              border-radius: 5px;
+            }
+          }
+        }
+        > #dropdown:hover #dropdownContent {
+          display: block;
+        }
+      }
+    }
+  }
+
+  > #myPageMain {
+    display: flex;
+    margin: 0 auto;
+    padding: 28px 0 0 0;
+    width: 1194px;
+    height: 580px;
+
+    > #myPageArticle {
+      width: 888px;
+      height: 580px;
+      float: left;
+      border-radius: 10px;
+      background-color: #ffffff;
+
+      > .room__list--title {
+        margin: 20px 0 23px 36px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      > .room__list--divider {
+        width: 888px;
+        height: 1px;
+        background-color: #e8e8e8;
+      }
+
+      > .room__list {
+        > .room__list--belong {
+          margin: 20px 0 0 36px;
+          width: 23px;
+          height: 17px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #b4b4b4;
+          float: left;
+        }
+
+        > .room__list--role {
+          margin: 20px 0 0 228px;
+          width: 23px;
+          height: 17px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #b4b4b4;
+          float: left;
+        }
+
+        > .room {
+          padding: 20px 20px 20px 36px;
+          width: 832px;
+          height: 438px;
+          list-style: none;
+          clear: left;
+
+          > .room__row {
+            margin-bottom: 20px;
+            width: 832px;
+            height: 32px;
+            position: relative;
+
+            > .room__title {
+              margin: 8px 0 0 0;
+              width: 152px;
+              height: 17px;
+              font-size: 12px;
+              font-weight: 500;
+              float: left;
+            }
+
+            > .room__role {
+              margin: 8px 0 0 100px;
+              width: 23px;
+              height: 17px;
+              font-size: 12px;
+              font-weight: 500;
+              float: left;
+            }
+
+            > .room__enter {
+              margin: 0 0 0 20px;
+              padding: 0;
+              width: 110px;
+              height: 32px;
+              border: none;
+              border-radius: 5px;
+              background-color: #4733cc;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 500;
+              position: absolute;
+              right: 150px;
+              cursor: pointer;
+            }
+
+            > .room__exit {
+              padding: 0;
+              width: 110px;
+              height: 32px;
+              border: none;
+              border-radius: 5px;
+              background-color: #000000;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 500;
+              position: absolute;
+              right: 20px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    > #myPageAside {
+      margin: 0 0 0 30px;
+      width: 276px;
+      height: 580px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      float: left;
+      position: relative;
+
+      > .profile__title {
+        margin: 20px 0 0 20px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      > .icon__my-account {
+        margin: 43px 0 0 94px;
+      }
+
+      > .button__edit-picture {
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        border: none;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 146px;
+        left: 156px;
+        cursor: pointer;
+      }
+
+      > .profile-form {
+        margin: 20px 0 0 38px;
+
+        > .form__edit-profile--name,
+        .form__edit-profile--email,
+        .form__edit-profile--nickname {
+          margin: 0 0 12px 0;
+          padding: 0 0 0 12px;
+          width: 200px;
+          height: 43px;
+          border: 1px solid #e8e8e8;
+          border-radius: 5px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        > .form__edit-profile--submit {
+          margin: 20px 0 0 53px;
+          padding: 0;
+          width: 110px;
+          height: 32px;
+          float: left;
+          border-radius: 5px;
+          border: none;
+          font-size: 14px;
+          font-weight: 500;
+          color: #ffffff;
+          background-color: #4733cc;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
