@@ -79,8 +79,16 @@ function addMember(name, isHost) {
   members.appendChild(member);
 }
 
+function MemberInstance(profileImg, name, isHost) {
+  this.profileImg = profileImg;
+  this.name = name;
+  this.isHost = isHost;
+
+  addMember(name, isHost);
+}
+
 // temp
-addMember('이루나', true);
-addMember('김민지', false);
-addMember('김지석', false);
-addMember('김루나', false);
+const mem1 = new MemberInstance(null, '이루나', true);
+const mem2 = new MemberInstance(null, '김민지', false);
+const mem3 = new MemberInstance(null, '김지석', false);
+const mem4 = new MemberInstance(null, '김루나', false);
