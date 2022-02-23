@@ -11,6 +11,7 @@ module.exports = {
     member: './src/js/member.js',
     mission: './src/js/mission.js',
     roomCode: './src/js/roomCode.js',
+    roomHost: './src/js/roomHost.js',
     roomList: './src/js/roomList.js',
     editProfile: './src/js/editProfile.js',
     myPage: './src/js/myPage.js',
