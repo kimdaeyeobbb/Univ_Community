@@ -50,6 +50,7 @@ function createMember(memberText, isHost) {
     memberRow.appendChild(banishDelegateBox);
 
     memberRow.addEventListener('click', (event) => {
+      console.log(event.target);
       const rect = memberRow.getBoundingClientRect();
 
       banishDelegateBox.style.display = 'flex';
@@ -64,8 +65,20 @@ function createMember(memberText, isHost) {
 
       delegate.addEventListener('click', () => {
         console.log(`${memberText} 위임`);
-        members.prepend(createMember(`${memberText}`, true));
         members.removeChild(memberRow);
+        members.prepend(createMember(`${memberText}`, true));
+      });
+
+      document.addEventListener('click', function (e) {
+        if (banishDelegateBox.style.display === 'flex') {
+          if (
+            e.target !== memberRow &&
+            e.target !== img &&
+            e.target !== memberName
+          ) {
+            banishDelegateBox.style.display = 'none';
+          }
+        }
       });
     });
   }
