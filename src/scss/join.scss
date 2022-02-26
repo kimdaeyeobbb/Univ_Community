@@ -91,47 +91,49 @@ header {
   display: block;
 }
 
-/* login */
+/* join */
 
 body {
   background-color: #f9fafb;
 }
 
-section {
+#pageWrap {
   margin: 30px auto;
   width: 1194px;
   height: 580px;
   background-color: white;
   border-radius: 10px;
-
-  > div {
-    display: flex;
-    margin: 0 auto;
-    padding-top: 102px;
-    width: 760px;
-  }
 }
 
-#loginWrap {
+#pageInner {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 102px;
+  width: 760px;
+}
+
+#joinWrap {
   display: flex;
   justify-content: center;
   width: 498px;
   border-right: 1px solid #e8e8e8;
-
-  > div {
-    width: 262px;
-  }
 }
 
-#loginTit {
+#joinWrapInner {
+  width: 262px;
+}
+
+#tit {
   margin-bottom: 20px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
 }
 
+#name,
 #email,
-#password {
+#password,
+#passwordCk {
   margin-bottom: 12px;
   padding-left: 20px;
   width: 242px;
@@ -141,7 +143,39 @@ section {
   border-radius: 5px;
 }
 
-#loginBtn {
+#checkBoxWrap {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12px;
+}
+
+#checkBoxInner {
+  display: flex;
+}
+
+#checkBox {
+  margin-left: 6px;
+  margin-right: 18px;
+}
+
+#askConsent {
+  color: #b4b4b4;
+  font-size: 12px;
+}
+
+#viewConsent {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: #b4b4b4;
+  }
+}
+
+#joinBtn {
   margin-bottom: 12px;
   width: 262px;
   height: 44px;
@@ -156,28 +190,24 @@ section {
   }
 }
 
-#joinLinkWrap,
-#findPwdWrap {
+#joinLinkWrap {
   margin-bottom: 8px;
 }
 
-#askFirstTime,
-#askForgotPwd {
+#askAboutLink {
   color: #b4b4b4;
   font-size: 12px;
 }
 
-#joinLink,
-#findPwd {
+#loginLink {
   margin-left: 10px;
   color: #4733cc;
   font-size: 12px;
-}
 
-#joinLink:hover,
-#findPwd:hover {
-  color: #8a7ed8;
-  cursor: pointer;
+  &:hover {
+    color: #8a7ed8;
+    cursor: pointer;
+  }
 }
 
 #simpleLoginWrap {

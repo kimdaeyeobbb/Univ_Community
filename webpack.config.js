@@ -6,8 +6,11 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     login: './src/js/login.js',
+    join: './src/js/join.js',
     askCreateRoom: './src/js/askCreateRoom.js',
     writeRoomInfo: './src/js/writeRoomInfo.js',
+    completedRoom: './src/js/completedRoom.js',
+    board: './src/js/board.js',
   },
 
   output: {
@@ -46,17 +49,38 @@ module.exports = {
     }),
 
     new HtmlPlugin({
-      title: 'askCreateRoom Title',
+      title: 'Join Title',
+      hash: true,
+      filename: 'join.html',
+      template: './join.html',
+    }),
+
+    new HtmlPlugin({
+      title: 'AskCreateRoom Title',
       hash: true,
       filename: 'askCreateRoom.html',
       template: './askCreateRoom.html',
     }),
 
     new HtmlPlugin({
-      title: 'writeRoomInfo Title',
+      title: 'WriteRoomInfo Title',
       hash: true,
       filename: 'writeRoomInfo.html',
       template: './writeRoomInfo.html',
+    }),
+
+    new HtmlPlugin({
+      title: 'CompletedRoom Title',
+      hash: true,
+      filename: 'completedRoom.html',
+      template: './completedRoom.html',
+    }),
+
+    new HtmlPlugin({
+      title: 'Board Title',
+      hash: true,
+      filename: 'board.html',
+      template: './board.html',
     }),
 
     new CopyPlugin({

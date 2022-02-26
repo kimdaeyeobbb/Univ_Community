@@ -1,8 +1,3 @@
-$bgColor: #f1f1f1;
-$btnBgColor: #4733cc;
-$btnColor: white;
-$pageColor: white;
-
 * {
   margin: 0px;
   padding: 0px;
@@ -42,11 +37,12 @@ header {
   color: #7f71d8;
   background-color: #f3f3fb;
   cursor: pointer;
+}
 
-  &:hover {
-    color: #8a7ed8;
-    background-color: #ebebff;
-  }
+#createRoom:hover,
+#joinRoom:hover {
+  color: #8a7ed8;
+  background-color: #ebebff;
 }
 
 #dropdown {
@@ -76,11 +72,11 @@ header {
     padding: 8px;
     text-decoration: none;
     display: block;
-  }
 
-  a:hover {
-    background-color: #fafafa;
-    border-radius: 5px;
+    &:hover {
+      background-color: #fafafa;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -91,14 +87,14 @@ header {
 /* index */
 
 body {
-  background-color: $bgColor;
+  background-color: #f9fafb;
 }
 
 section {
   margin: 30px auto;
   width: 1194px;
   height: 580px;
-  background-color: $pageColor;
+  background-color: white;
   border-radius: 10px;
 
   > div {
@@ -128,8 +124,8 @@ section {
 #startBtn {
   width: 110px;
   height: 32px;
-  color: $btnColor;
-  background-color: $btnBgColor;
+  color: white;
+  background-color: #4733cc;
   border-radius: 5px;
   border: none;
   cursor: pointer;

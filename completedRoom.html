@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>UBLING</title>
-    <link rel="stylesheet" href="css/writeRoomInfo.css" />
+    <link rel="stylesheet" href="css/roomCreationComplete.css" />
   </head>
 
   <body>
@@ -26,14 +26,27 @@
 
     <section>
       <div>
-        <div id="tit">방 정보를 입력해주세요</div>
+        <div id="tit">방 생성 완료!</div>
+        
+        <div id="explain">방이 생성되었습니다.</div>
+
         <label id="inputTit">방이름</label>
-        <input type="text" placeholder="이름" id="name" />
+        <input type="text" value="하늘대 컴퓨터공학부 12학번방" id="name" readonly />
+        
         <label id="inputTit">보안</label>
-        <input type="text" placeholder="암호(6자리)" id="password" />
-        <div id="explain">암호가 있는 사용자만 방에 들어올 수 있습니다.</div>
-        <input type="button" value="다음" id="nextBtn" />
+        <div id="codeWrap">
+          <input id="code" value="QWERTY" readonly />
+          <img
+            src="images/whiteCopyBtn.svg"
+            id="copyBtn"
+            onclick="copy_to_clipboard()"
+          />
+        </div>
+
+        <input type="button" value="입장하기" id="enterBtn" />
       </div>
     </div>
+
+    <srcipt src="js/roomCreationComplete.js"></srcipt>
   </body>
 </html>
