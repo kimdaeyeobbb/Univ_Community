@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UBLING</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/board.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="headerInner">
+        <div id="logo">UBLING</div>
+        <div id="gnb">
+          <input type="button" value="방 생성" id="createRoom" />
+          <input type="button" value="방 참가" id="joinRoom" />
+          <img src="../images/loginIcon.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div id="pageWrap">
+      <div id="screenWrap">
+        <div id="missionTit">1명 이상의 동기랑 밥먹기</div>
+
+        <div id="screen">
+          <div id="missionCompelete">
+            <div id="missionCompeleteInner">
+              <img src="images/listIcon.svg" id="memberIcon" />이루나 밥먹기
+              미션 완료!
+            </div>
+          </div>
+
+          <div id="reviewBox">
+            <div id="reviewBoxInner">
+              <div id="reviewTit">
+                <img src="images/listIcon.svg" id="memberIcon" />후문 맛집에서
+                밥 먹고 왔어요
+              </div>
+
+              <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              <div id="review">
+                후문에 떡볶이 맛집이 있다고 해서 다녀왔어요😄
+              </div>
+            </div>
+          </div>
+
+          <div id="missionCompelete">
+            <div id="missionCompeleteInner">
+              <img src="images/listIcon.svg" id="memberIcon" />미션 완료!!
+            </div>
+            <img src="images/missionIcon.svg" id="missionIcon" />
+          </div>
+
+          <div id="missionCompelete">
+            <div id="missionCompeleteInner">
+              <img src="images/listIcon.svg" id="memberIcon" />미션 완료!!
+            </div>
+          </div>
+
+          <div id="missionCompelete">
+            <div id="missionCompeleteInner">
+              <img src="images/listIcon.svg" id="memberIcon" />미션 완료!!
+            </div>
+          </div>
+        </div>
+
+        <div id="chatWrap">
+          <input type="text" placeholder="글을 입력하세요." id="chat" />
+
+          <div class="image-upload">
+            <label for="file-input">
+              <img src="images/cameraImg.svg" id="cameraImg" />
+            </label>
+
+            <input id="file-input" type="file" />
+          </div>
+
+          <img src="images/send.svg" id="sendImg" />
+        </div>
+      </div>
+
+      <div id="listWrap">
+        <div id="listTit">하늘대 컴퓨터공학과 19학번 방</div>
+
+        <ul>
+          <li id="list">
+            <img src="images/listIcon.svg" />
+            <div id="memberName">이루나</div>
+            <img src="images/moderatorIcon.svg" id="moderatorIcon" />
+          </li>
+
+          <li id="list">
+            <img src="images/listIcon.svg" />
+            <div id="memberName">이루나</div>
+          </li>
+
+          <li id="list">
+            <img src="images/listIcon.svg" />
+            <div id="memberName">이루나</div>
+          </li>
+        </ul>
+
+        <div id="codeWrap">
+          <div id="codeTit">방코드</div>
+          <input id="code" value="QWERTY" readonly />
+          <img
+            src="images/copyBtn.svg"
+            id="copyBtn"
+            onclick="copy_to_clipboard()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script src="js/board.js"></script>
+  </body>
+</html>

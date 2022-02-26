@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UBLING</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div id="logo">UBLING</div>
+        <div id="gnb">
+          <input type="button" value="방 생성" id="createRoom" />
+          <input type="button" value="방 참가" id="joinRoom" />
+          <div id="dropdown">
+            <div id="dropdownBtn"><img src="./images/loginIcon.svg" /></div>
+            <div id="dropdownContent">
+              <a href="#">마이페이지</a>
+              <a href="./login.html">로그인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <div id="tit">Welcome</div>
+        <div id="subTit">[로그]에 오신 것을 환영합니다.</div>
+        <input
+          type="button"
+          value="시작하기"
+          id="startBtn"
+          onClick="location.href='./askCreateRoom.html'"
+        />
+      </div>
+    </section>
+  </body>
+</html>

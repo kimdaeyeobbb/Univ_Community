@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UBLING</title>
+    <link rel="stylesheet" href="css/join.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div id="logo">UBLING</div>
+        <div id="gnb">
+          <input type="button" value="방 생성" id="createRoom" />
+          <input type="button" value="방 참가" id="joinRoom" />
+          <div id="dropdown">
+            <div id="dropdownBtn"><img src="./images/loginIcon.svg" /></div>
+            <div id="dropdownContent">
+              <a href="#">마이페이지</a>
+              <a href="./login.html">로그인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="pageWrap">
+      <div id="pageInner">
+        <div id="joinWrap">
+          <div id="joinWrapInner">
+            <div id="tit">회원가입</div>
+
+            <input type="text" placeholder="이름" id="name" />
+            <input type="text" placeholder="이메일" id="email" />
+            <input type="text" placeholder="비밀번호" id="password" />
+            <input type="text" placeholder="비밀번호 확인" id="passwordCk" />
+
+            <div id="checkBoxWrap">
+              <div id="checkBoxInner">
+                <input type="checkBox" id="checkBox" />
+                <div id="askConsent">서비스 약관에 동의합니다.</div>
+              </div>
+              <div id="viewConsent">약관 보기</div>
+            </div>
+            <input type="button" value="가입하기" id="joinBtn" />
+
+            <div id="loginLinkWrap">
+              <span id="askAboutLink">이미 가입하셨나요?</span
+              ><span id="loginLink">로그인</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="simpleLoginWrap">
+          <div>
+            <div id="simpleLoginTit">간편 로그인</div>
+            <button id="naverBtnWrap">
+              <img src="images/naverLogo.svg" id="naverLogo" />
+              <div id="naverLogin">네이버로 로그인</div>
+            </button>
+
+            <button id="kakaoBtnWrap">
+              <img src="images/kakaoLogo.svg" id="kakaoLogo" />
+              <div id="kakaoLogin">카카오로 로그인</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

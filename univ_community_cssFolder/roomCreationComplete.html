@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UBLING</title>
+    <link rel="stylesheet" href="css/roomCreationComplete.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div id="logo">UBLING</div>
+        <div id="gnb">
+          <input type="button" value="방 생성" id="createRoom" />
+          <input type="button" value="방 참가" id="joinRoom" />
+          <div id="dropdown">
+            <div id="dropdownBtn"><img src="./images/loginIcon.svg" /></div>
+            <div id="dropdownContent">
+              <a href="#">마이페이지</a>
+              <a href="./login.html">로그인</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <div id="tit">방 생성 완료!</div>
+        
+        <div id="explain">방이 생성되었습니다.</div>
+
+        <label id="inputTit">방이름</label>
+        <input type="text" value="하늘대 컴퓨터공학부 12학번방" id="name" readonly />
+        
+        <label id="inputTit">보안</label>
+        <div id="codeWrap">
+          <input id="code" value="QWERTY" readonly />
+          <img
+            src="images/whiteCopyBtn.svg"
+            id="copyBtn"
+            onclick="copy_to_clipboard()"
+          />
+        </div>
+
+        <input type="button" value="입장하기" id="enterBtn" />
+      </div>
+    </div>
+
+    <srcipt src="js/roomCreationComplete.js"></srcipt>
+  </body>
+</html>
